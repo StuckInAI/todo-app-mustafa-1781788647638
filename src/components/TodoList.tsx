@@ -12,12 +12,12 @@ type TodoListProps = {
 export default function TodoList({ todos, onToggle, onDelete, onEdit }: TodoListProps) {
   if (todos.length === 0) {
     return (
-      <div className="bg-white border border-gray-100 rounded-2xl shadow-sm p-10 flex flex-col items-center gap-3 text-center">
-        <div className="bg-gray-100 rounded-full p-4">
-          <ClipboardList size={32} className="text-gray-400" />
+      <div className="bg-neutral-800 border border-neutral-700 rounded-2xl shadow-sm p-10 flex flex-col items-center gap-3 text-center">
+        <div className="bg-neutral-700 rounded-full p-4">
+          <ClipboardList size={32} className="text-neutral-500" />
         </div>
-        <p className="text-gray-500 font-medium">No tasks here</p>
-        <p className="text-xs text-gray-400">Add a task above to get started!</p>
+        <p className="text-neutral-400 font-medium">No tasks here</p>
+        <p className="text-xs text-neutral-600">Add a task above to get started!</p>
       </div>
     );
   }
